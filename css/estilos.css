@@ -1,0 +1,219 @@
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;  
+}
+body{
+    background-color: rgb(204, 206, 209);
+}
+
+header{
+    background-color: rgb(21, 1, 110);
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+   
+}
+.msj1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red;  */
+}
+.uno{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 250px;
+  
+    
+}
+
+.dos{
+    height: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 95%;
+    background-color: rgb(226, 226, 221);
+    
+   
+}
+
+.dos div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
+.elemento{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+select{
+    height: 30px;
+    border-radius: 5PX;
+}
+
+
+/* ------------------------------
+disision 
+---------------------------------------*/
+
+.division{
+    margin: auto;
+    height: 2px;
+    width: 98%;
+    margin-top: 20px;
+    background-color: rgb(238, 245, 245);
+}
+
+
+
+.formulario2{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.datos_funcionario{
+    width: 95%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(226, 226, 221);
+    
+}
+
+.datos_funcionario div{
+ display: flex;
+ flex-direction: column;
+ /* border: 1px solid red; */
+ 
+
+}
+.datos{
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+input{
+    width: 250px;
+    height: 30px;
+    border-radius: 5PX;
+    padding-left: 30px;
+}
+
+.titulo{
+    margin-top: 40px;
+    font-size: 22px;
+}
+
+footer{
+    background-color: rgb(21, 1, 110);
+    height: 100px;
+    margin-top: 20px;
+}
+
+button{
+    margin-top: 20px;
+    background-color: #00a09d ;
+    height: 40px;
+    width: 100px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+}
+@media(min-width:550px){
+    form{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        /* border: 1px solid red;  */
+        margin-left: 30px;
+    }
+
+    .dos{
+        flex-direction: row;
+        height: 300px;
+        width: 100%;
+        gap: 30px;
+        flex-wrap: wrap;
+       
+       
+       
+      
+    }
+
+    
+  label{
+    text-align: start;
+   
+    
+  }
+    select{
+        width: 250px;
+        height: 30px;
+       
+    }
+
+
+    .datos_funcionario{
+        flex-direction: row;
+        gap: 30px;
+        flex-wrap: wrap;
+        height: 250px;
+    }
+}
+
+
+@media(min-width:900px){
+
+    .datos_funcionario{
+       gap: 12px;
+       height: 190px;
+       width: 90%;
+    }
+
+    .dos{
+        height: 190px;
+        width: 90%;
+    }
+}
+
+@media(min-width:1100px){
+
+    .datos_funcionario{
+       gap: 30px;
+        height: 100px;
+    }
+
+    .dos{
+        height: 210px;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+}
