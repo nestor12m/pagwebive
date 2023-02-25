@@ -20,11 +20,14 @@
         <form action="">
            <div class="uno">
             <label class="elemento" for="">Elemento</label>
-            <select name="" id="">
+            <select name="" id="Tipo_elemento">
                 <option value="selecione">Seleccione</option>
-                <option value="selecione">Computador</option>
-                <option value="selecione">Impresora</option>
-                <option value="selecione">Scanner</option>
+                <option value="Computador">Computador</option>
+                <option value="Monitor">Monitor</option>
+                <option value="Teclado">Teclado</option>
+                <option value="Mouse">Mouse</option>
+                <option value="Impresoras">Impresoras</option>
+                <option value="Scanner">Scanner</option>
             </select>
            </div>
         </form>
@@ -42,30 +45,34 @@
         <div class="datos_funcionario">
             <div>
                 <label class="elemento" for="">Cedula</label>
-                <input type="number">
+                <input type="number" id="Cedula">
               </div>
     
                 <div>
                 <label class="elemento" for="">Nombre</label>
-                <input type="text">
+                <input type="text" id="nombre_Funcionario">
                 </div>
     
                 <div>
                 <label class="elemento" for="">Despacho</label>
-                <input type="text">
+                <input type="text" id="Despacho_funcionario">
                 </div>
     
                 <div>
                 <label class="elemento" for="">Direccion</label>
-                <input type="text">
+                <input type="text" id="direccion">
                 </div>
         </div>
+
+        <!-- conenedor pc -->
           
-        <p class=" titulo">Formulario para Computadores</p>
-                <div class="dos">
+        <div id="Contenedor_computador">
+            <p class=" titulo" >Formulario para Computadores</p>
+                <div class="dos" >
+                    
                     <div>
                         <label class="elemento" for="">Equipo</label>
-                    <select name="" id="">
+                    <select name="" id="Opcion_elemento_computador">
                         <option value="selecione">Seleccione</option>
                         <option value="CPU">CPU</option>
                         <option value="TODO en UNO">TODO EN UNO</option>
@@ -74,9 +81,9 @@
        
                    <div>
                     <label class="elemento" for="">Marca</label>
-                    <select name="" id="">
+                    <select name="" id="tipo_marca_computador">
                         <option value="selecione">Seleccione</option>
-                        <option value="CPU">Pcsmart</option>
+                        <option value="Pcsmart">Pcsmart</option>
                         <option value="Dell">Dell</option>
                         <option value="Hp">Hp</option>
                         <option value="lenovo">lenovo</option>
@@ -85,158 +92,371 @@
        
                     <div>
                         <label class="elemento" for="">Modelo</label>
-                    <select name="" id="">
+                    <select name="" id="tipoModeloComputador">
                         <option value="selecione">Seleccione</option>
-                        <option value="CPU">Pcsmart</option>
-                        <option value="Dell">Dell</option>
-                        <option value="Hp">Hp</option>
-                        <option value="lenovo">lenovo</option>
+                        <option value="Optiplex 3280">Optiplex 3280</option>
+                        <option value="Vostro 3174">Vostro 3174</option>
+                        <option value="Gobaf800">Gobaf800</option>
+                        <option value="Hp Pro One 600 G2">Hp Pro One 600 G2</option>
                     </select>
                     </div>
        
                     <div>
                         <label class="elemento" for="">Serial</label>
-                    <select name="" id="">
-                        <option value="selecione">Seleccione</option>
-                        <option value="CPU">Pcsmart</option>
-                        <option value="Dell">Dell</option>
-                        <option value="Hp">Hp</option>
-                        <option value="lenovo">lenovo</option>
-                    </select>
+                    <input type="text" id="tipoSerialComputador">
                     </div>
        
                    <div>
                     <label class="elemento" for="">Placa</label>
-                    <select name="" id="">
-                        <option value="selecione">Seleccione</option>
-                        <option value="CPU">Pcsmart</option>
-                        <option value="Dell">Dell</option>
-                        <option value="Hp">Hp</option>
-                        <option value="lenovo">lenovo</option>
-                    </select>
+                   <input type="text" id="tipoplacaComputador">
                    </div>
 
                     </div>
+        </div>
        
-           
 
-                    <p class=" titulo">Formulario para Impresoras</p>
-                    <div class="dos">
-                        <div>
-                            <label class="elemento" for="">Equipo</label>
-                        <select name="" id="">
-                            <option value="selecione">Seleccione</option>
-                            <option value="CPU">CPU</option>
-                            <option value="TODO en UNO">TODO EN UNO</option>
-                        </select>
-                        </div>
+          <!-- conenedor monitores -->
+          
+   <div id="Contenedor_Monitor">
+    <p class=" titulo">Formulario para Monitores</p>
+        <div class="dos" >
+            
+            <div>
+                <label class="elemento" for="">Equipo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="Monitor">Monitor</option>
+                <option value="TODO en UNO">TODO EN UNO</option>
+            </select>
+            </div>
+
+           <div>
+            <label class="elemento" for="">Marca</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="Pcsmart">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+           </div>
+
+            <div>
+                <label class="elemento" for="">Modelo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+            </div>
+
+            <div>
+                <label class="elemento" for="">Serial</label>
+           <input type="text">
+            </div>
+
+           <div>
+            <label class="elemento" for="">Placa</label>
+           <input type="text">
+           </div>
+
+            </div>
+</div>
            
-                       <div>
-                        <label class="elemento" for="">Marca</label>
-                        <select name="" id="">
-                            <option value="selecione">Seleccione</option>
-                            <option value="CPU">Pcsmart</option>
-                            <option value="Dell">Dell</option>
-                            <option value="Hp">Hp</option>
-                            <option value="lenovo">lenovo</option>
-                        </select>
-                       </div>
-           
-                        <div>
-                            <label class="elemento" for="">Modelo</label>
-                        <select name="" id="">
-                            <option value="selecione">Seleccione</option>
-                            <option value="CPU">Pcsmart</option>
-                            <option value="Dell">Dell</option>
-                            <option value="Hp">Hp</option>
-                            <option value="lenovo">lenovo</option>
-                        </select>
-                        </div>
-           
-                        <div>
-                            <label class="elemento" for="">Serial</label>
-                        <select name="" id="">
-                            <option value="selecione">Seleccione</option>
-                            <option value="CPU">Pcsmart</option>
-                            <option value="Dell">Dell</option>
-                            <option value="Hp">Hp</option>
-                            <option value="lenovo">lenovo</option>
-                        </select>
-                        </div>
-           
-                       <div>
-                        <label class="elemento" for="">Placa</label>
-                        <select name="" id="">
-                            <option value="selecione">Seleccione</option>
-                            <option value="CPU">Pcsmart</option>
-                            <option value="Dell">Dell</option>
-                            <option value="Hp">Hp</option>
-                            <option value="lenovo">lenovo</option>
-                        </select>
-                       </div>
-    
-                        </div>
+   <!-- conenedor teclado -->
+          
+   <div id="Contenedor_teclado">
+    <p class=" titulo">Formulario para Teclado</p>
+        <div class="dos" >
+            
+            <div>
+                <label class="elemento" for="">Equipo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">CPU</option>
+                <option value="TODO en UNO">TODO EN UNO</option>
+            </select>
+            </div>
+
+           <div>
+            <label class="elemento" for="">Marca</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+           </div>
+
+            <div>
+                <label class="elemento" for="">Modelo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+            </div>
+
+            <div>
+                <label class="elemento" for="">Serial</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+            </div>
+
+           <div>
+            <label class="elemento" for="">Placa</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+           </div>
+
+            </div>
+</div>
 
 
-                        <p class=" titulo">Formulario para Scanners</p>
-                        <div class="dos">
-                            <div>
-                                <label class="elemento" for="">Equipo</label>
-                            <select name="" id="">
-                                <option value="selecione">Seleccione</option>
-                                <option value="CPU">CPU</option>
-                                <option value="TODO en UNO">TODO EN UNO</option>
-                            </select>
-                            </div>
-               
-                           <div>
-                            <label class="elemento" for="">Marca</label>
-                            <select name="" id="">
-                                <option value="selecione">Seleccione</option>
-                                <option value="CPU">Pcsmart</option>
-                                <option value="Dell">Dell</option>
-                                <option value="Hp">Hp</option>
-                                <option value="lenovo">lenovo</option>
-                            </select>
-                           </div>
-               
-                            <div>
-                                <label class="elemento" for="">Modelo</label>
-                            <select name="" id="">
-                                <option value="selecione">Seleccione</option>
-                                <option value="CPU">Pcsmart</option>
-                                <option value="Dell">Dell</option>
-                                <option value="Hp">Hp</option>
-                                <option value="lenovo">lenovo</option>
-                            </select>
-                            </div>
-               
-                            <div>
-                                <label class="elemento" for="">Serial</label>
-                            <select name="" id="">
-                                <option value="selecione">Seleccione</option>
-                                <option value="CPU">Pcsmart</option>
-                                <option value="Dell">Dell</option>
-                                <option value="Hp">Hp</option>
-                                <option value="lenovo">lenovo</option>
-                            </select>
-                            </div>
-               
-                           <div>
-                            <label class="elemento" for="">Placa</label>
-                            <select name="" id="">
-                                <option value="selecione">Seleccione</option>
-                                <option value="CPU">Pcsmart</option>
-                                <option value="Dell">Dell</option>
-                                <option value="Hp">Hp</option>
-                                <option value="lenovo">lenovo</option>
-                            </select>
-                           </div>
-        
-                            </div>
+ <!-- conenedor Mouse -->
+          
+ <div id="Contenedor_mouse">
+    <p class=" titulo">Formulario para Mouse</p>
+        <div class="dos" >
+            
+            <div>
+                <label class="elemento" for="">Equipo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">CPU</option>
+                <option value="TODO en UNO">TODO EN UNO</option>
+            </select>
+            </div>
 
-          <button type="submit" value="Enviar"> Enviar</button>
+           <div>
+            <label class="elemento" for="">Marca</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+           </div>
+
+            <div>
+                <label class="elemento" for="">Modelo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+            </div>
+
+            <div>
+                <label class="elemento" for="">Serial</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+            </div>
+
+           <div>
+            <label class="elemento" for="">Placa</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+           </div>
+
+            </div>
+</div>
+
+ <!-- conenedor Impresora -->
+          
+ <div id="Contenedor_impresora">
+    <p class=" titulo">Formulario para Impresoras</p>
+        <div class="dos" >
+            
+            <div>
+                <label class="elemento" for="">Equipo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">CPU</option>
+                <option value="TODO en UNO">TODO EN UNO</option>
+            </select>
+            </div>
+
+           <div>
+            <label class="elemento" for="">Marca</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+           </div>
+
+            <div>
+                <label class="elemento" for="">Modelo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+            </div>
+
+            <div>
+                <label class="elemento" for="">Serial</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+            </div>
+
+           <div>
+            <label class="elemento" for="">Placa</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+           </div>
+
+            </div>
+</div>
+
+
+
+ <!-- conenedor Scanner -->
+          
+ <div id="Contenedor_scanner">
+    <p class=" titulo">Formulario para scanner</p>
+        <div class="dos" >
+            
+            <div>
+                <label class="elemento" for="">Equipo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">CPU</option>
+                <option value="TODO en UNO">TODO EN UNO</option>
+            </select>
+            </div>
+
+           <div>
+            <label class="elemento" for="">Marca</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+           </div>
+
+            <div>
+                <label class="elemento" for="">Modelo</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+            </div>
+
+            <div>
+                <label class="elemento" for="">Serial</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+            </div>
+
+           <div>
+            <label class="elemento" for="">Placa</label>
+            <select name="" id="">
+                <option value="selecione">Seleccione</option>
+                <option value="CPU">Pcsmart</option>
+                <option value="Dell">Dell</option>
+                <option value="Hp">Hp</option>
+                <option value="lenovo">lenovo</option>
+            </select>
+           </div>
+
+            </div>
+</div>
+
+
+
+
+
+                  
+
+          <button type="submit" value="Enviar" id="bnt_envirdts_pc"> Enviar</button>
          </form>
+
+
+    <div class="contenedor_tabla">
+        <div > 
+            <P class="titulo">Resultados</P>
+    
+            <table class="default_tabla">
+    
+                <tr>
+              
+                  <th>Responsable</th>
+                  <th>Equipo</th>
+                  <th>Marca</th>
+                  <th>Modelo</th>
+                  <th>Serial</th>
+                  <th>Placa</th>
+              
+                </tr>
+              
+                <!-- <tr>
+              
+                  <td>Soleado</td>
+              
+                  <td>Mayormente soleado</td>
+              
+                  <td>Parcialmente nublado</td>
+              
+                </tr> -->
+            
+              
+              </table>
+          </div>
+    </div>
     </main>
 </body>
 

@@ -124,12 +124,92 @@ input{
     width: 250px;
     height: 30px;
     border-radius: 5PX;
-    padding-left: 30px;
+    padding-left: 10px;
+    text-transform: uppercase;
 }
 
 .titulo{
     margin-top: 40px;
     font-size: 22px;
+}
+
+/* seccion # */
+
+#Contenedor_computador{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+#Contenedor_Monitor{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+
+#Contenedor_impresora{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+#Contenedor_mouse{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+#Contenedor_teclado{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+#Contenedor_scanner{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 95%;
+}
+
+/* --------------------------------------------------------------------
+                    tabla 
+--------------------------------------------------------------------*/
+
+.contenedor_tabla{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contenedor_tabla p{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.default_tabla{
+ /* border: 1px solid red; */
+ width: 98%;
+}
+
+th{
+    border:2px solid black;
+    width: 150px;
+    font-size: 20px;
+}
+td{
+    border: 1px solid rgb(50, 109, 3);
+    text-align: center;
+    text-transform: uppercase;
 }
 
 footer{
