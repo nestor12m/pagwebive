@@ -6,21 +6,32 @@ const input_cedula = document.querySelector("#input_cedula");
 const bnt_consultar = document.querySelector(".bnt_consultar");
 const divHTML = document.querySelector(".resultado");
 
+
+const datosBusqueda = {
+  CEDULA : "",
+  CONTROL_DE_MANTENIMIENTO_CPU:"",
+  CONTROL_DE_INVENTARIO_CPU: "",
+
+}
+
 //addeventliseners
 
 bnt_consultar.addEventListener("click", (e)=>{
     e.preventDefault();
+    // datosBusqueda.CEDULA = input_cedula.value;
+    // console.log(datosBusqueda)
+ 
     buscarDatos();
-    filtrarDatos();
     
 })
 
 
 // funciones
 
-async function buscarDatos(element){
+async function buscarDatos(){
+  
     console.log("realizando click desde la fncion");
-
+    console.log("hola");
     try {
         
 
@@ -31,19 +42,39 @@ async function buscarDatos(element){
     // se destructura el array de abjetos
     const { computadores } = bd;
 
+    // cedulaUsuario =input_cedula.value;
+
+    // for(i = 0; i <= computadores.length; i++){
+
+    //     // console.log(computadores[i].CEDULA)
+    //     if( cedulaUsuario == parseInt(computadores[i].CEDULA)){
+       
+    //         console.log( computadores[i])
+    //     }
+    //     // else{
+    //     //     console.log("no es")
+    //     // }
+    // }
+    
+   
+    
+   
+   
+    
  // genrerar el html  iterando cada uno de los elementos para cojer el valor e insertarlo en html
- computadores.forEach(element => {
+    computadores.forEach(element => {
     const {DEPARTAMENTO, SECCIONAL, MUNICIPIO, DIRECCION, SEDE, JUZGADO, CEDULA, RESPONSABLE, TIPO_ELEMENTO, NOMBRE_CI
     ,MARCA,   MODELO, SERIAL, PLACA, CONTROL_DE_INVENTARIO_CPU, CONTROL_DE_MANTENIMIENTO_CPU, PROCESADOR
     ,MEMORIA, DISCO_DURO, ANTIVIRUS, SISTEMA_OPERATIVO, VERSION_SISTEMA_OPERATIVO, DIRECCION_IP, MARCA_TECLADO
      ,SERIAL_TECLADO, PLACA_TECLADO, CONTROL_INVENTARIO_ETB_TECLADO, MARCA_MOUSE, SERIAL_MOUSE, PLACA_MOUSE
     ,CONTROL_INVENTARIO_ETB_MOUSE,MARCA_MONITOR, SERIAL_MONITOR, PLACA_MONITOR, CONTROL_INVENTARIO_ETB_MONITOR} = element
 
-
+    
+    
      // genrerar dom scrpting
 
       // se crean los parrafos y se le agrega el  cntenido del arrray de objetos
-
+   
    const contenido = `
     
    <div class="datos_bd">
@@ -56,12 +87,14 @@ async function buscarDatos(element){
   </div>
  <div class="linea"></div>
   <div class="datos_bd">
+  <div class="item_bd"><p class="parrafotitulo">RESPONSABLE:</p>  <span>${RESPONSABLE}</span></div>
    <div class="item_bd"><p class="parrafotitulo">CEDULA:</p> <span>${CEDULA}</span></div>
-   <div class="item_bd"><p class="parrafotitulo">RESPONSABLE:</p>  <span>${RESPONSABLE}</span></div>
+  
   </div>
 
   <div class="linea"></div>
   <div class="datos_bd">
+
    <div class="item_bd"><p class="parrafotitulo">TIPO ELEMENTO:</p> <span>${TIPO_ELEMENTO}</span></div>
    <div class="item_bd"><p class="parrafotitulo">NOMBRE CI:</p>  <span>${NOMBRE_CI}</span></div>
    <div class="item_bd"><p class="parrafotitulo">MARCA:</p>  <span>${MARCA}</span></div>
@@ -89,7 +122,9 @@ async function buscarDatos(element){
    <div class="item_bd"><p class="parrafotitulo">SERIAL MONITOR:</p>  <span>${SERIAL_MONITOR}</span></div>
    <div class="item_bd"><p class="parrafotitulo">PLACA MONITOR:</p>  <span>${PLACA_MONITOR}</span></div>
    <div class="item_bd"><p class="parrafotitulo">INVENTARIO MONITOR ETB:</p>  <span>${CONTROL_INVENTARIO_ETB_MONITOR}</span></div>
-   
+   <div class="linea1"></div>
+   <div class="linea1"></div>
+   <div class="linea1"></div>
   </div>
    
    `
@@ -98,21 +133,21 @@ async function buscarDatos(element){
 
       const divhijo = document.createElement("div");
       divhijo.innerHTML= contenido;
-     
-
       divHTML.appendChild(divhijo);
-
  });
 
     } catch (error) {
         
     }
+
+
+  
 }
 
-function filtrarDatos(){
-   const resultado = computadores.filter( filtrarCedula)
-}
+// function filtrarDatos(computadores){
+//   const resultado = computadores.filter( filtrarCedula )
+// }
 
-function filtrarCedula(element){
-
-}
+// function filtrarCedula(computadores){
+//  console.log(computadores);
+// }

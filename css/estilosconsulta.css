@@ -5,7 +5,7 @@
     box-sizing: border-box;  
   }
   body{
-      background-color: rgb(204, 206, 209);
+      background-color: rgba(204, 206, 209, 0.767);
       font-family: "Roboto", "Odoo Unicode Support Noto", sans-serif
   }
   
@@ -99,15 +99,17 @@ form{
 -------------------------------------------------------------------------------------------------- */
 
 .resultado{
-    border:1px solid red;
-    margin-top: 30px;
-
+    /* border:1px solid red; */
+    margin: 40px auto;
+    max-width: 1000px;
+    
+   
 }
 .datos_bd{
-    border:1px solid rgb(9, 255, 0);
+    /* border:1px solid rgb(9, 255, 0); */
     margin-top: 20px;
     display: flex;
-    gap:5px;
+    gap:10px;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -115,7 +117,7 @@ form{
 .item_bd{
  display: flex;
  width: 300px;
- border:1px solid rgba(0, 0, 255, 0.404);
+ border:1px solid rgba(0, 0, 255, 0.452);
 }
 .item_bd span{
 margin-top: 3px;
@@ -125,7 +127,12 @@ margin-left: 3px;
     font-weight: 900;
 }
 .linea{
-    border:1px solid black;
+    border:1px solid rgba(0, 0, 0, 0.322);
+    width: 98%;
+    margin: 10px 0px;
+}
+.linea1{
+    border:1px solid rgb(36, 1, 230);
     width: 98%;
     margin: 10px 0px;
 }
