@@ -44,7 +44,8 @@
                                          menu
 -------------------------------------------------------------------------------------------------- */
 main{
-    height: 60vh;
+    height: auto;
+    min-height: 60vh;
 }
 h1{
     color: white;
@@ -91,6 +92,42 @@ form{
     border: none;
     border-radius: 5px;
     font-size: 17px;
+}
+
+/* ------------------------------------------------------------------------------------------------
+                                        RESULTADOS
+-------------------------------------------------------------------------------------------------- */
+
+.resultado{
+    border:1px solid red;
+    margin-top: 30px;
+
+}
+.datos_bd{
+    border:1px solid rgb(9, 255, 0);
+    margin-top: 20px;
+    display: flex;
+    gap:5px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.item_bd{
+ display: flex;
+ width: 300px;
+ border:1px solid rgba(0, 0, 255, 0.404);
+}
+.item_bd span{
+margin-top: 3px;
+margin-left: 3px;
+}
+.parrafotitulo{
+    font-weight: 900;
+}
+.linea{
+    border:1px solid black;
+    width: 98%;
+    margin: 10px 0px;
 }
 /* ------------------------------------------------------------------------------------------------
                                            footer
