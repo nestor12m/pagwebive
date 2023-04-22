@@ -1,0 +1,109 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+  }
+  body{
+      background-color: rgb(204, 206, 209);
+      font-family: "Roboto", "Odoo Unicode Support Noto", sans-serif
+  }
+  
+
+
+  
+/* ------------------------------------------------------------------------------------------------
+                                           header
+-------------------------------------------------------------------------------------------------- */
+  header{
+      background-color: #19325B;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  h1{
+      color: white;
+      font-size: 25px;
+      text-align: center;
+     
+  }
+  .primero{
+    display: flex;
+    justify-content: center;
+  }
+
+  .msj1{
+    text-align: center;
+    margin: 20px 0;
+    
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.Contenedor_salir{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+}
+.btn_salir{
+    padding: 20px 40px;
+    margin-right: 20px;
+    text-align: right;
+}
+  
+/* ------------------------------------------------------------------------------------------------
+                                         menu
+-------------------------------------------------------------------------------------------------- */
+
+.container_menu{
+    width: 98%;
+    height: 380px;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.item_menu{
+width: 220px;
+height: 120px;
+background-color: rgba(245, 245, 245, 0.486);
+border-radius: 5px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+
+.imgicons{
+    width: 100px;
+    height: 80px;
+}
+
+/* ------------------------------------------------------------------------------------------------
+                                           footer
+-------------------------------------------------------------------------------------------------- */
+footer{
+    background-color: #0e213f;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color:white;
+    
+}
+
+@media(min-width:550px){
+
+
+ .container_menu{
+   height: 60vh;
+  flex-direction: row;
+    }
+}

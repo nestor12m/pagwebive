@@ -1,0 +1,129 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;  
+  }
+  body{
+      background-color: rgb(204, 206, 209);
+      font-family: "Roboto", "Odoo Unicode Support Noto", sans-serif
+  }
+  
+
+
+  
+/* ------------------------------------------------------------------------------------------------
+                                           header
+-------------------------------------------------------------------------------------------------- */
+  header{
+      background-color: #19325B;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+  h1{
+      color: white;
+      font-size: 25px;
+      text-align: center;
+     
+  }
+  .Contenedor_salir{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+}
+.btn_salir{
+    padding: 20px 40px;
+    margin-right: 20px;
+    text-align: right;
+}
+
+  
+/* ------------------------------------------------------------------------------------------------
+                                         menu
+-------------------------------------------------------------------------------------------------- */
+main{
+    height: 60vh;
+}
+h1{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+   
+}
+.msj1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: 700;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px solid red;  */
+}
+.uno{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 250px;
+  
+    
+}
+.elemento{
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+.select{
+    height: 33px;
+    border-radius: 1PX;
+}
+.bnt_consultar{
+    margin-top: 60px;
+    height: 35px;
+    width: 120px;
+    background-color: #00a09d;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+}
+/* ------------------------------------------------------------------------------------------------
+                                           footer
+-------------------------------------------------------------------------------------------------- */
+footer{
+    background-color: #0e213f;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+footer p{
+    color:white;
+    
+}
+
+
+
+
+
+
+@media(min-width:550px){
+
+form{
+    flex-direction: row;
+    width: 98%;
+    justify-content: flex-start;
+    margin-left: 40px;
+}
+.bnt_consultar{
+    margin-left: 30px;
+  
+}
+    
+   }

@@ -6,10 +6,11 @@
 }
 body{
     background-color: rgb(204, 206, 209);
+    font-family: "Roboto", "Odoo Unicode Support Noto", sans-serif
 }
 
 header{
-    background-color: rgb(21, 1, 110);
+    background-color: #19325B;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -213,9 +214,16 @@ td{
 }
 
 footer{
-    background-color: rgb(21, 1, 110);
+    background-color: #0e213f;
     height: 100px;
     margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p{
+    color:white;
+    
 }
 
 button{
