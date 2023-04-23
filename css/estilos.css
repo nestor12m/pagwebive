@@ -7,6 +7,7 @@
 body{
     background-color: rgb(204, 206, 209);
     font-family: "Roboto", "Odoo Unicode Support Noto", sans-serif
+    
 }
 
 header{
@@ -28,6 +29,16 @@ h1{
     font-size: 22px;
     font-weight: 700;
 }
+.Contenedor_salir{
+    display: flex;
+    justify-content: flex-end;
+    height: 30px;
+}
+.btn_salir{
+    padding: 20px 40px;
+    margin-right: 20px;
+    text-align: right;
+}
 form{
     display: flex;
     justify-content: center;
@@ -46,7 +57,7 @@ form{
 }
 
 .dos{
-    height: 420px;
+    height: 2020px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -58,7 +69,43 @@ form{
     
    
 }
+.dosi{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 95%;
+    background-color: rgb(226, 226, 221);
+    
+   
+}
+.dose{
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    width: 95%;
+    background-color: rgb(226, 226, 221);
+    
+   
+}
+.dosi div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
 
+.dose div{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+}
 .dos div{
     width: 250px;
     display: flex;
@@ -72,6 +119,7 @@ form{
 select{
     height: 30px;
     border-radius: 5PX;
+    margin-top: 19px;
 }
 
 
@@ -97,7 +145,7 @@ disision
 
 .datos_funcionario{
     width: 95%;
-    height: 350px;
+    height: 650px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,6 +180,7 @@ input{
 .titulo{
     margin-top: 40px;
     font-size: 22px;
+    font-weight: 900;
 }
 
 /* seccion # */
@@ -218,6 +267,7 @@ footer{
     height: 100px;
     margin-top: 20px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
@@ -226,14 +276,61 @@ footer p{
     
 }
 
-button{
-    margin-top: 20px;
+.btn_Guardar{
+    display: flex;
+    justify-content: center;
+    align-items:center ;  
+   margin: 0 auto;
     background-color: #00a09d ;
     height: 40px;
     width: 100px;
     border: none;
     border-radius: 5px;
     color: white;
+}
+
+
+/* ------------------------------------------------------------------------------------------------
+                                        RESULTADOS
+-------------------------------------------------------------------------------------------------- */
+
+.resultado{
+   display: block;
+    margin: 40px auto;
+    max-width: 1000px;
+    
+   
+}
+.datos_bd{
+    /* border:1px solid rgb(9, 255, 0); */
+    margin-top: 20px;
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.item_bd{
+ display: flex;
+ width: 300px;
+ border:1px solid rgba(0, 0, 255, 0.452);
+}
+.item_bd span{
+margin-top: 3px;
+margin-left: 3px;
+}
+.parrafotitulo{
+    font-weight: 700;
+}
+.linea{
+    border:1px solid rgba(0, 0, 0, 0.322);
+    width: 98%;
+    margin: 10px 0px;
+}
+.linea1{
+    border:1px solid rgb(36, 1, 230);
+    width: 98%;
+    margin: 10px 0px;
 }
 @media(min-width:550px){
     form{
@@ -246,16 +343,27 @@ button{
 
     .dos{
         flex-direction: row;
-        height: 300px;
+        height:auto;
         width: 100%;
         gap: 30px;
-        flex-wrap: wrap;
-       
-       
-       
-      
+        flex-wrap: wrap; 
     }
 
+    .dosi{
+        flex-direction: row;
+       
+        width: 100%;
+        gap: 30px;
+        flex-wrap: wrap; 
+    }
+
+    
+    .dose{
+        flex-direction: row;
+        width: 100%;
+        gap: 30px;
+        flex-wrap: wrap; 
+    }
     
   label{
     text-align: start;
@@ -265,6 +373,7 @@ button{
     select{
         width: 250px;
         height: 30px;
+        
        
     }
 
@@ -273,7 +382,7 @@ button{
         flex-direction: row;
         gap: 30px;
         flex-wrap: wrap;
-        height: 250px;
+        height: auto;
     }
 }
 
@@ -282,25 +391,32 @@ button{
 
     .datos_funcionario{
        gap: 12px;
-       height: 190px;
+       height: auto;
        width: 90%;
     }
 
     .dos{
-        height: 190px;
+        height: auto;
         width: 90%;
     }
+  
 }
+
 
 @media(min-width:1100px){
 
     .datos_funcionario{
        gap: 30px;
-        height: 100px;
+        height: auto;
     }
 
     .dos{
-        height: 210px;
+        height: auto;
+        width: 90%;
+        padding-bottom: 20px;
+    }
+    .dose{
+      
         width: 90%;
         padding-bottom: 20px;
     }
